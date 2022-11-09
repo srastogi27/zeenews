@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter          name="APPIUM_URL"                     	value="http://0.0.0.0:4723/wd/hub"/>
+    <parameter          name="DEVICE_TYPE"                    	value="Web"/>
+    <parameter          name="DEVICE_NAME"                    	value="R9ZN909H54L"/>
+    <parameter          name="BROWSER_NAME"                   	value="Chrome"/>
+    <parameter          name="URL"                        		value="https://zeenews.india.com"/>
+    <parameter          name="USE_APIDRIVER_WITH_WEB"           value="true"/>
+    
+    <parameter name="testng.metrics.report.logo"              	value = "https://english.cdn.zeenews.com/images/logo/zeenewslogo_nav.png"/>
+    <parameter name="testng.metrics.report.name"              	value = "TestWebAMPNetworkCalls.html"/>
+    <parameter name="testng.metrics.report.appendTimestamp"   	value = "True"/>
+    
+
+    <test name="/Users/vn5485h/Downloads/RunnerTestSuite">
+        <classes>
+            <class name="com.zee.backend.TestWebNetworkCalls">
+                <methods>
+                    <include name="test01_Validate_GA_And_Scorecard_Request_AfterOpeningTheArticle_For_Web"/>
+                    <include name="test02_Validate_GA_With_IncorrectTID_And_Scorecard_Request_AfterOpeningTheArticle_For_Web"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="5" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-06T18:10:18 IST" name="All Test Suite" finished-at="2022-10-06T18:14:44 IST" duration-ms="265757">
+    <groups>
+    </groups>
+    <test started-at="2022-10-06T18:10:18 IST" name="/Users/vn5485h/Downloads/RunnerTestSuite" finished-at="2022-10-06T18:14:44 IST" duration-ms="265757">
+      <class name="com.zee.backend.TestWebPageSpeed">
+        <test-method is-config="true" signature="cleanDirectories()[pri:0, instance:com.zee.backend.TestWebPageSpeed@6c6c5427]" started-at="2022-10-06T18:10:18 IST" name="cleanDirectories" finished-at="2022-10-06T18:10:18 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirectories -->
+        <test-method is-config="true" signature="initChrome(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zee.backend.TestWebPageSpeed@6c6c5427]" started-at="2022-10-06T18:10:18 IST" name="initChrome" finished-at="2022-10-06T18:10:21 IST" duration-ms="2967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R9ZN909H54L]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initChrome -->
+        <test-method signature="test04_ValidatePageSpeedOfCrawlerMenus(java.lang.String)[pri:4, instance:com.zee.backend.TestWebPageSpeed@6c6c5427]" started-at="2022-10-06T18:10:21 IST" name="test04_ValidatePageSpeedOfCrawlerMenus" finished-at="2022-10-06T18:14:39 IST" duration-ms="258133" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://zeenews.india.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Validated, The Core Vitals Assessment has been passed or failed. expected [Passed] but found [Failed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Validated, The Core Vitals Assessment has been passed or failed. expected [Passed] but found [Failed]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.zee.backend.TestWebPageSpeed.test04_ValidatePageSpeedOfCrawlerMenus(TestWebPageSpeed.java:167)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04_ValidatePageSpeedOfCrawlerMenus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zee.backend.TestWebPageSpeed@6c6c5427]" started-at="2022-10-06T18:14:39 IST" name="tearDown" finished-at="2022-10-06T18:14:41 IST" duration-ms="1607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initChrome(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zee.backend.TestWebPageSpeed@6c6c5427]" started-at="2022-10-06T18:14:41 IST" name="initChrome" finished-at="2022-10-06T18:14:43 IST" duration-ms="1648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R9ZN909H54L]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initChrome -->
+        <test-method signature="writeDataInExcel()[pri:99, instance:com.zee.backend.TestWebPageSpeed@6c6c5427]" started-at="2022-10-06T18:14:43 IST" name="writeDataInExcel" finished-at="2022-10-06T18:14:43 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeDataInExcel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zee.backend.TestWebPageSpeed@6c6c5427]" started-at="2022-10-06T18:14:43 IST" name="tearDown" finished-at="2022-10-06T18:14:44 IST" duration-ms="953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zee.backend.TestWebPageSpeed -->
+    </test> <!-- /Users/vn5485h/Downloads/RunnerTestSuite -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
